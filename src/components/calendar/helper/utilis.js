@@ -20,4 +20,27 @@ const getFirstDayOfDate = (D) => {
     return daysArray[date.getDay()];
 };
 
-export { numberOfDaysInMonthOfDate, getFirstDayOfDate };
+const getMonthYearDateFormat = (D) => {
+    const monthArray = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ];
+    const date = new Date(D);
+    const month = date.getMonth(); // January gives 0
+    console.log("month:", monthArray[month]);
+    const year = date.getFullYear();
+    console.log("year:", year);
+    return `${monthArray[month]} ${year}`;
+};
+
+export { numberOfDaysInMonthOfDate, getFirstDayOfDate, getMonthYearDateFormat };

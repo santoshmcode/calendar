@@ -6,7 +6,7 @@ import Main from "./Main";
 const Calendar = ({ date }) => {
     return (
         <div className="calendar-wrapper">
-            <Head data="October 2020" />
+            <Head date={date} />
             <Main date={date} />
         </div>
     );
