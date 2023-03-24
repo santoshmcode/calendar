@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./calendar.css";
 import { getFirstDayOfDate, numberOfDaysInMonthOfDate } from "./helper/utilis";
 const daysArray = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 

@@ -7,7 +7,7 @@ const Head = ({ date }) => {
         setHeading(getMonthYearDateFormat(date));
     }, [date]);
 
-    return <div>{heading}</div>;
+    return <div className="date-head">{heading}</div>;
 };
 
 export default Head;

@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "./Head";
 import Main from "./Main";
+import "./calendar.css";
 
 // date prop formate is mm/dd/yyyy in string
 const Calendar = ({ date }) => {
