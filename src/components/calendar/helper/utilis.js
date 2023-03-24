@@ -14,4 +14,10 @@ const numberOfDaysInMonthOfDate = (D) => {
     return diffInDays;
 };
 
-export { numberOfDaysInMonthOfDate };
+const getFirstDayOfDate = (D) => {
+    const [date] = getFirstAndLastDayOfDate(D);
+    const daysArray = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    return daysArray[date.getDay()];
+};
+
+export { numberOfDaysInMonthOfDate, getFirstDayOfDate };
