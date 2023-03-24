@@ -57,12 +57,12 @@
     align-items: center;
     justify-content: center;
     color: var(--light-secondary);
+    width: 56px;
+    height: 56px;
 }
 
 .date[active] {
     background: var(--primary-color);
     color: #fff;
-    width: 56px;
-    height: 56px;
     border-radius: 50%;
 }

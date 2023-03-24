@@ -5,7 +5,7 @@ const daysArray = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const Main = ({ date }) => {
     const [noOfDates, setNoOfDates] = useState([]);
     const [blankDates, setBlankDates] = useState([]);
-    const [todaysDate, setTodaysDate] = useState(new Date(date).getDate());
+    const [todaysDate, setTodaysDate] = useState();
 
     useEffect(() => {
         let tempArr = [];
@@ -22,6 +22,8 @@ const Main = ({ date }) => {
             tempArr2.push("blank-key-" + i);
         }
         setBlankDates(tempArr2);
+
+        setTodaysDate(new Date(date).getDate());
     }, [date]);
 
     return (
