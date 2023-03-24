@@ -10,3 +10,7 @@
     grid-column-gap: 32px;
     grid-row-gap: 32px;
 }
+
+.date[active] {
+    border: 1px solid red;
+}

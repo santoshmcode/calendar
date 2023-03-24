@@ -1,6 +1,6 @@
 import "./App.css";
 import Calendar from "./components/calendar";
-const date = "12/31/2023";
+const date = "8/15/2023";
 function App() {
     console.log("date ", date);
     return (

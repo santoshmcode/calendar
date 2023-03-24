@@ -6,6 +6,7 @@ const daysArray = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const Main = ({ date }) => {
     const [noOfDates, setNoOfDates] = useState([]);
     const [blankDates, setBlankDates] = useState([]);
+    const [todaysDate, setTodaysDate] = useState(new Date(date).getDate());
 
     useEffect(() => {
         let tempArr = [];
@@ -36,7 +37,13 @@ const Main = ({ date }) => {
                 <div key={el}></div>
             ))}
             {noOfDates.map((el) => (
-                <div key={el}>{el}</div>
+                <div
+                    active={todaysDate === el ? "active" : undefined}
+                    className="date"
+                    key={el}
+                >
+                    {el}
+                </div>
             ))}
         </div>
     );
