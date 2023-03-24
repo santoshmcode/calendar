@@ -37,9 +37,7 @@ const getMonthYearDateFormat = (D) => {
     ];
     const date = new Date(D);
     const month = date.getMonth(); // January gives 0
-    console.log("month:", monthArray[month]);
     const year = date.getFullYear();
-    console.log("year:", year);
     return `${monthArray[month]} ${year}`;
 };
 

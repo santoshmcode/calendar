@@ -29,16 +29,17 @@ const Main = ({ date }) => {
     return (
         <div className="main">
             {daysArray.map((day) => (
-                <div className="day" key={day}>
+                <div role="day" className="day" key={day}>
                     {day}
                 </div>
             ))}
 
             {blankDates.map((el) => (
-                <div key={el}></div>
+                <div role="empty-date-place-holders" key={el}></div>
             ))}
             {noOfDates.map((el) => (
                 <div
+                    role="date"
                     active={todaysDate === el ? "active" : undefined}
                     className="date"
                     key={el}

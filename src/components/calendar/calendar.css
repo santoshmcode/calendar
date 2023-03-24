@@ -14,6 +14,7 @@
     box-sizing: border-box;
     cursor: default;
     user-select: none;
+    transition: all 0.5s ease;
 }
 
 .calendar-wrapper {
@@ -49,6 +50,11 @@
     line-height: 29px;
     color: var(--light-primary);
     font-weight: 500;
+    text-align: center;
+}
+
+.day:nth-child(1) {
+    text-align: left;
 }
 
 .date {
