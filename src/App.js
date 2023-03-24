@@ -1,9 +1,10 @@
 import "./App.css";
+import Calendar from "./components/calendar";
 
 function App() {
     return (
         <div className="App">
-            <>Calendar</>
+            <Calendar date="05/03/2023" />
         </div>
     );
 }
