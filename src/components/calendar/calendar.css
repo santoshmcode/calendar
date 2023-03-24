@@ -12,6 +12,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: default;
+    user-select: none;
 }
 
 .calendar-wrapper {
@@ -65,4 +67,8 @@
     background: var(--primary-color);
     color: #fff;
     border-radius: 50%;
+}
+
+.invalid-date {
+    color: var(--primary-color);
 }

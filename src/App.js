@@ -1,15 +1,16 @@
 import { useState } from "react";
 import "./App.css";
 import Calendar from "./components/calendar";
+import { todaysDate } from "./components/calendar/helper/utilis";
 
 function App() {
-    const [date, setDate] = useState("12/27/2022");
+    const [date, setDate] = useState(todaysDate());
     const [input, setInput] = useState("");
     const handleInputChange = (e) => {
         setInput(e.target.value);
     };
     const handleSubmit = () => {
-        setDate(input);
+        setDate(input ? input : todaysDate());
     };
     return (
         <div className="App">
