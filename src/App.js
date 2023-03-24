@@ -15,11 +15,14 @@ function App() {
     return (
         <div className="App">
             <input
+                role="input"
                 onChange={(e) => handleInputChange(e)}
                 type="text"
                 placeholder="mm/dd/yyyy"
             />
-            <button onClick={handleSubmit}>Search</button>
+            <button role="submit-btn" onClick={handleSubmit}>
+                Search
+            </button>
             <Calendar date={date} />
         </div>
     );
